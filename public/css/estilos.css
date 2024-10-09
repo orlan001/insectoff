@@ -62,7 +62,7 @@ body{
 
 .contenido-img{
     display: flex;    
-    background: linear-gradient(rgba(5,7,12, 0.35), rgba(12, 12, 14, 0.8)) ,url("fumilogo20.png"), center center fixed;
+    background: linear-gradient(rgba(5,7,12, 0.35), rgba(12, 12, 14, 0.8)) ,url("../img/fumilogo20.png"), center center fixed;
     background-repeat: no-repeat;
     border: unset;
     background-size: cover;

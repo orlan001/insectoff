@@ -46,8 +46,7 @@ form_registrar_val.addEventListener("submit", async (e) =>{
     if (erroresRegistrar.length !== 0){
         mostrar_mensajes_error(erroresRegistrar)
     }else{
-        enviarDatos(e)  
-        
+        enviarDatos(e)          
     }
 })
  
@@ -69,6 +68,9 @@ async function enviarDatos(datos){
         headers:{"Content-Type": "application/json"},
         body: enviarJson
     })
+
+    console.log(respuesta.ok)
+    
     if(!respuesta.ok) return msje_error.classList.toggle('autenticacion', false)
     const resJson = await respuesta.json();
     if(resJson.redirect){
