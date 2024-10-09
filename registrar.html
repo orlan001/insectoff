@@ -4,11 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Nosotros</title>
-        <link rel="stylesheet" href="../public/css/estilos.css">
+        <link rel="stylesheet" href="./public/css/estilos.css">
         <script src="https://kit.fontawesome.com/c273467a6c.js" crossorigin="anonymous"></script>
-        <script defer src="../public/js/movil.js"></script>
-        <script defer src="../public/js/login.js"></script>
-    </head>
+        <script defer src="./public/js/movil.js"></script>
+            <script defer src="../public/js/registrar.js"></script>        </head>
 
 <body>
     <div class="contenedor-wattsap">
@@ -34,37 +33,42 @@
             <button class="navbar-movil" aria-label="abrir menu"><i class="fa-solid fa-bars"></i></button>
             <ul class="navlista" id="lis">
                 <button class="cerrar" aria-label="abrir menu"><i class="fa-solid fa-bars">Cerrar</i></button>
-                <li class="navitem"><a class="navlink navlink-active" href="../index.html"><i class="fa-solid fa-house icon"></i>Inicio</a></li>
-                <li class="navitem"><a class="navlink navlink-active" href="../views/turno.html"><i class="fa-solid fa-car icon"></i>Servicios </a></li>
-                <li class="navitem"><a class="navlink navlink-active" href="../views/about.html"><i class="fa-solid fa-users icon"></i>Acerca de nosotros</a></li>
-                <li class="navitem"><a class="navlink navlink-active" href="../views/contact.html"><i class="fa-regular fa-address-book icon"></i>Contacto</a></li>
-                <li class="navitem"><a class="navlink navlink-active" href="../views/login.html"><i class="fa-solid fa-lock icon"></i>Login</a></li>
-    </ul>
+                <li class="navitem"><a class="navlink navlink-active" href="./index.html"><i class="fa-solid fa-house icon"></i>Inicio</a></li>
+                <li class="navitem"><a class="navlink navlink-active" href="./turno.html"><i class="fa-solid fa-car icon"></i>Servicios </a></li>
+                <li class="navitem"><a class="navlink navlink-active" href="./about.html"><i class="fa-solid fa-users icon"></i>Acerca de nosotros</a></li>
+                <li class="navitem"><a class="navlink navlink-active" href="./contact.html"><i class="fa-regular fa-address-book icon"></i>Contacto</a></li>
+                <li class="navitem"><a class="navlink navlink-active" href="./login.html"><i class="fa-solid fa-lock icon"></i>Login</a></li>
+
+   </ul>
         </nav>
     </header>
     
-
     <main class="principal"> 
-        <section class="contenedor-login">
-            <form action="" class="form-login" method="post">
-                <figure class="imagen-login">
-                    <img src="../public/img/insectoff.png">
-                </figure>    
-                <p class="titulo-login"> Acceder a la Plataforma </p>
-                <i class="fa-regular fa-envelope iconLogin"></i>
-                <label  for="email">Email:</label>
-                <input type="text" minlength="5" class="box-login" name="email"  id="email" autocomplete="off" placeholder="Ingrese email"><br>
-                <p class="mensaje-usuario" ></p>
+        <section class="contenedor-registrar">
+            <figure class="imagen-login">
+                <img src="../public/img/insectoff.png">
+            </figure>
+            <form action="" class="form-registrar" method="post">
+                <p class="titulo-registrar"> Registrar </p>
 
-                <i class="fa-solid fa-lock iconLogin"></i>
+                <label  for="usuario">Usuario:</label>
+                <input type="text" minlength="3" maxlength="10" class="box-registrar" name="usuario"  id="usuario" autocomplete="off" placeholder="Ingrese un Nombre de Usuario"><br>
+                <p class="mensaje-usuario" ></p>
+                
+
+                <label  for="email">Email:</label>
+                <input type="email" class="box-registrar" name="email"  id="email" placeholder="Ingrese su Email"><br>
+                <p class="mensaje-email" ></p>
+                
+
                 <label  for="password">Contraseña:</label>
-                <input type="password" class="box-login" name="password" autocomplete="off" id="password"  placeholder="Ingrese su Contraseña"><br>
+                <input type="password" class="box-registrar" name="password" autocomplete="off" id="password"  placeholder="Ingrese una Contraseña"><br>
                 <p class="mensaje-password" ></p>
 
-                <button type="submit" class="boton-login" id="boton-login">Ingresar al Sistema</button>
-                <p class="mensaje-valido"></p>
-                <p class="msje-error autenticacion" >Error en Autenticacion..</p>
-                <p class="registrar">¿No tienes una cuenta?.<a href="../views/registrar.html">Registrar</a></p>
+                <button type="submit" class="boton-registrar" id="boton-registrar">Registrar Datos</button>
+                <p class="msje-error autenticacion">error al registrar</p>      
+
+                <p class="iniciar">¿ Ya tienes una Cuenta?  <a href="./login.html">Iniciar Session</a></p>
             </form>
         </section>
     </main>
@@ -90,12 +94,12 @@
             <div class="footer-navlista">
                 <h3><strong>NAVEGACION</strong></h3>
                 <ul class="footer-navlista-ul">
-                    <li class="navitem1"><a class="navlink1 navlink-active1" href="../index.html"><i class="fa-solid fa-house icon"></i>Inicio</a></li>
-                    <li class="navitem1"><a class="navlink1 navlink-active1" href="../views/turno.html"><i class="fa-solid fa-car icon"></i>Servicios </a></li>
-                    <li class="navitem1"><a class="navlink1 navlink-active1" href="../views/about.html"><i class="fa-solid fa-users icon"></i>Acerca de nosotros</a></li>
-                    <li class="navitem1"><a class="navlink1 navlink-active1" href="../views/contact.html"><i class="fa-regular fa-address-book icon"></i>Contacto</a></li>
-                    <li class="navitem1"><a class="navlink1 navlink-active1" href="../views/login.html"><i class="fa-solid fa-lock icon"></i>Login</a></li>
-             </ul>    
+                    <li class="navitem1"><a class="navlink1 navlink-active1" href="./index.html"><i class="fa-solid fa-house icon"></i>Inicio</a></li>
+                    <li class="navitem1"><a class="navlink1 navlink-active1" href="./turno.html"><i class="fa-solid fa-car icon"></i>Servicios </a></li>
+                    <li class="navitem1"><a class="navlink1 navlink-active1" href="./about.html"><i class="fa-solid fa-users icon"></i>Acerca de nosotros</a></li>
+                    <li class="navitem1"><a class="navlink1 navlink-active1" href="./contact.html"><i class="fa-regular fa-address-book icon"></i>Contacto</a></li>
+                    <li class="navitem1"><a class="navlink1 navlink-active1" href="./login.html"><i class="fa-solid fa-lock icon"></i>Login</a></li>
+    </ul>    
             </div>    
         </div>        
         <div class="footer-derechos">
