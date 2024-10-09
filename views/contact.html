@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contacto</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://kit.fontawesome.com/c273467a6c.js" crossorigin="anonymous"></script>
+    <script defer src="movil.js"></script>
+    <script defer src="contacto.js"></script>
+
+</head>
+
+<body>
+
+    <div class="contenedor-wattsap">
+        <figure class="figure">
+            <img class="logo" src="insectoff.png" alt="imagen fumigacion" >
+        </figure>
+        <div class="contenedor-contacto-etw">
+            <div class="icon-email" >                       
+                <i class="fa-regular fa-envelope iconLogin"></i> 
+                <p><strong class="text-wattsap"> Insectoff@gmail.com</strong></p>
+            </div>
+            <div class="icon-email" >                       
+                <i class="fa-solid fa-phone"></i>
+                <p><a href="tel:1136084211"><strong class="text-wattsap" > 43114811</strong></a> </p>
+            </div>
+            <div class="contenedor-text-wattsap ">
+                <a class="text-wattsap" href="https://api.whatsapp.com/send/?phone=541136084211"><strong>Contactenos por Whatsapp</strong> <i class="fa-brands fa-whatsapp"></i> <strong>541136084211</strong></a>
+            </div>    
+        </div>
+    </div>
+    <header class="header">            
+        <nav class="navbar" id="navbar">
+            <button class="navbar-movil" aria-label="abrir menu"><i class="fa-solid fa-bars"></i></button>
+            <ul class="navlista" id="lis">
+                <button class="cerrar" aria-label="abrir menu"><i class="fa-solid fa-bars">Cerrar</i></button>
+                <li class="navitem"><a class="navlink navlink-active" href="/"><i class="fa-solid fa-house icon"></i>Inicio</a></li>
+                <li class="navitem"><a class="navlink navlink-active" href="/servicio"><i class="fa-solid fa-car icon"></i>Servicios </a></li>
+                <li class="navitem"><a class="navlink navlink-active" href="/about"><i class="fa-solid fa-users icon"></i>Acerca de nosotros</a></li>
+                <li class="navitem"><a class="navlink navlink-active" href="/contact"><i class="fa-regular fa-address-book icon"></i>Contacto</a></li>
+                <li class="navitem"><a class="navlink navlink-active" href="/login"><i class="fa-solid fa-lock icon"></i>Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main class="principal">
+        <section class="contenedor-contacto">
+            <h1 class="titulo"> Contacto </h1>
+            <article class="contenedor-ubicacion">
+
+                <div class="contenedor-ubicacion-contacto">
+                    <P><i class="fa-solid fa-location-pin"></i><strong>San Martin 945 CABA</strong></P>
+                    <P><i class="fa-solid fa-phone"></i>43114811</P>
+                    <p><strong>Horario de Atencion</strong></p>
+                    <p><strong>Lunes a Viernes</strong></p>
+                    <p><strong>24hrs al dia</strong></p>
+                </div>
+    
+                <div class="contenedor-mapa-contacto">
+                   <iframe  class="mapa-contacto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.284172964155!2d-58.3783971264651!3d-34.59697501318835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacaee8ace49%3A0x2880e776f74a82ff!2sSan%20Mart%C3%ADn%20945%2C%20C1004AAS%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1726446608093!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <img src="fumilocal.png" alt="local de lavado" class="img-contacto">
+                </div>
+    
+                <div class="contenedor-form-contacto">                
+                    <h2 class="titulo-ubicacion">DEJANOS TU MENSAJE</h2><br>
+                    <form method="post" class="form-contacto">
+                        <label for="email"> Tu Correo:</label>
+                        <input type="email" name="email" class="box-contacto" id="email" placeholder="ingrese su correo"><br>
+                        <p class="mensaje-email"></p>
+
+                        <label for="nombre"> Tu Nombre:</label>
+                        <input type="text" name="nombre" class="box-contacto" id="nombre"  placeholder="Ingrese su nombre"><br>
+                        <p class="mensaje-nombre"></p>
+
+                        <label for="apellido"> Tu Apellido:</label>
+                        <input type="text" name="apellido" class="box-contacto" id="apellido"  placeholder="Ingrese su Apellido"><br>
+                        <p class="mensaje-apellido"></p>
+
+                        <label for="textarea"> Tu Mensaje:</label>
+                        <textarea name="textarea" id="textarea" class="box-contacto-mensaje" cols="30" rows="10" placeholder="Escriba su mensaje.."></textarea><br>
+                        <p class="mensaje-textarea"></p>
+                        <p> Nos comunicaremos a la brevedad.</p>  
+                        <button type="submit" class="boton-contacto">Enviar Datos </button>
+                    </form>
+                    <p class="mensaje-valido"></p>
+                </div>                
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-img-cont">
+            <div class="footer-ubicacion">
+                <h3> <strong>NUESTROS DATOS DE CONTACTO</strong></h1>
+                <p>Calle San Martin 953 CABA</p>
+                <p>Telef:1136084211</p>
+                <p>InsectOff@gmail.com</p>
+            </div>
+            <figure class="figure1">
+                <img class="logo" src="insectoff.png" alt="imagen fumigacion" >
+            </figure>
+            <div class="footer-iconos">
+                <h3><strong>NUESTRAS REDES</strong></h3>
+                <a href="https://www.facebook.com/zebflores"><i class="fa-brands fa-facebook"></i>Facebook</a>
+                <a href="https://api.whatsapp.com/send/?phone=541136084211"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
+                <a href="mailto:insectoff@correo.com"><i class="fa-regular fa-envelope"></i>Email</a>
+                <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i>Youtube</a>
+            </div>    
+            <div class="footer-navlista">
+                <h3><strong>NAVEGACION</strong></h3>
+                <ul class="footer-navlista-ul">
+                    <li class="navitem1"><a class="navlink1 navlink-active1" href="/"><i class="fa-solid fa-house icon"></i>Inicio</a></li>
+                    <li class="navitem1"><a class="navlink1 navlink-active1" href="/servicio"><i class="fa-solid fa-car icon"></i>Servicios </a></li>
+                    <li class="navitem1"><a class="navlink1 navlink-active1" href="/about"><i class="fa-solid fa-users icon"></i>Acerca de nosotros</a></li>
+                    <li class="navitem1"><a class="navlink1 navlink-active1" href="/contact"><i class="fa-regular fa-address-book icon"></i>Contacto</a></li>
+                    <li class="navitem1"><a class="navlink1 navlink-active1" href="/login"><i class="fa-solid fa-lock icon"></i>Login</a></li>
+                </ul>    
+            </div>    
+        </div>        
+        <div class="footer-derechos">
+            <p> Copyright@OMP2024 - InsectOff todos los Derechos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>

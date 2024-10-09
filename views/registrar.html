@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nosotros</title>
+        <link rel="stylesheet" href="estilos.css">
+        <script src="https://kit.fontawesome.com/c273467a6c.js" crossorigin="anonymous"></script>
+        <script defer src="movil.js"></script>
+        <script defer src="registrar.js"></script>
+    </head>
+
+<body>
+    <div class="contenedor-wattsap">
+        <figure class="figure">
+            <img class="logo" src="insectoff.png" alt="imagen fumigacion" >
+        </figure>
+        <div class="contenedor-contacto-etw">
+            <div class="icon-email" >                       
+                <i class="fa-regular fa-envelope iconLogin"></i> 
+                <p><strong class="text-wattsap"> Insectoff@gmail.com</strong></p>
+            </div>
+            <div class="icon-email" >                       
+                <i class="fa-solid fa-phone"></i>
+                <p><a href="tel:1136084211"><strong class="text-wattsap" > 43114811</strong></a> </p>
+            </div>
+            <div class="contenedor-text-wattsap ">
+                <a class="text-wattsap" href="https://api.whatsapp.com/send/?phone=541136084211"><strong>Contactenos por Whatsapp</strong> <i class="fa-brands fa-whatsapp"></i> <strong>541136084211</strong></a>
+            </div>    
+        </div>
+    </div>
+    <header class="header">            
+        <nav class="navbar" id="navbar">
+            <button class="navbar-movil" aria-label="abrir menu"><i class="fa-solid fa-bars"></i></button>
+            <ul class="navlista" id="lis">
+                <button class="cerrar" aria-label="abrir menu"><i class="fa-solid fa-bars">Cerrar</i></button>
+                <li class="navitem"><a class="navlink navlink-active" href="/"><i class="fa-solid fa-house icon"></i>Inicio</a></li>
+                <li class="navitem"><a class="navlink navlink-active" href="/servicio"><i class="fa-solid fa-car icon"></i>Servicios </a></li>
+                <li class="navitem"><a class="navlink navlink-active" href="/about"><i class="fa-solid fa-users icon"></i>Acerca de nosotros</a></li>
+                <li class="navitem"><a class="navlink navlink-active" href="/contact"><i class="fa-regular fa-address-book icon"></i>Contacto</a></li>
+                <li class="navitem"><a class="navlink navlink-active" href="/login"><i class="fa-solid fa-lock icon"></i>Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="principal"> 
+        <section class="contenedor-registrar">
+            <figure class="imagen-login">
+                <img src="insectoff.png">
+            </figure>
+            <form action="" class="form-registrar" method="post">
+                <p class="titulo-registrar"> Registrar </p>
+
+                <label  for="usuario">Usuario:</label>
+                <input type="text" minlength="3" maxlength="10" class="box-registrar" name="usuario"  id="usuario" autocomplete="off" placeholder="Ingrese un Nombre de Usuario"><br>
+                <p class="mensaje-usuario" ></p>
+                
+
+                <label  for="email">Email:</label>
+                <input type="email" class="box-registrar" name="email"  id="email" placeholder="Ingrese su Email"><br>
+                <p class="mensaje-email" ></p>
+                
+
+                <label  for="password">Contraseña:</label>
+                <input type="password" class="box-registrar" name="password" autocomplete="off" id="password"  placeholder="Ingrese una Contraseña"><br>
+                <p class="mensaje-password" ></p>
+
+                <button type="submit" class="boton-registrar" id="boton-registrar">Registrar Datos</button>
+                <p class="msje-error autenticacion">Usuario registrado</p>      
+
+                <p class="iniciar">¿ Ya tienes una Cuenta?  <a href="/login">Iniciar Session</a></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-img-cont">
+            <div class="footer-ubicacion">
+                <h3> <strong>NUESTROS DATOS DE CONTACTO</strong></h1>
+                <p>Calle San Martin 953 CABA</p>
+                <p>Telef:1136084211</p>
+                <p>InsectOff@gmail.com</p>
+            </div>
+            <figure class="figure1">
+                <img class="logo" src="insectoff.png" alt="imagen fumigacion" >
+            </figure>
+            <div class="footer-iconos">
+                <h3><strong>NUESTRAS REDES</strong></h3>
+                <a href="https://www.facebook.com/zebflores"><i class="fa-brands fa-facebook"></i>Facebook</a>
+                <a href="https://api.whatsapp.com/send/?phone=541136084211"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
+                <a href="mailto:insectoff@correo.com"><i class="fa-regular fa-envelope"></i>Email</a>
+                <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i>Youtube</a>
+            </div>    
+            <div class="footer-navlista">
+                <h3><strong>NAVEGACION</strong></h3>
+                <ul class="footer-navlista-ul">
+                    <li class="navitem1"><a class="navlink1 navlink-active1" href="/"><i class="fa-solid fa-house icon"></i>Inicio</a></li>
+                    <li class="navitem1"><a class="navlink1 navlink-active1" href="/servicio"><i class="fa-solid fa-car icon"></i>Servicios </a></li>
+                    <li class="navitem1"><a class="navlink1 navlink-active1" href="/about"><i class="fa-solid fa-users icon"></i>Acerca de nosotros</a></li>
+                    <li class="navitem1"><a class="navlink1 navlink-active1" href="/contact"><i class="fa-regular fa-address-book icon"></i>Contacto</a></li>
+                    <li class="navitem1"><a class="navlink1 navlink-active1" href="/login"><i class="fa-solid fa-lock icon"></i>Login</a></li>
+                </ul>    
+            </div>    
+        </div>        
+        <div class="footer-derechos">
+            <p> Copyright@OMP2024 - InsectOff todos los Derechos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>

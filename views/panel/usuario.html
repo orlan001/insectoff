@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="estado-reserva">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil </title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="modal.css">
+    <script src="https://kit.fontawesome.com/c273467a6c.js" crossorigin="anonymous"></script>
+    <script defer src="cerrarSession.js"></script>
+    <script defer src="movil.js"></script>
+    <script defer src="usuario.js"></script>
+</head>
+<body>
+    <div class="contenedor-wattsap">
+        <div class="contenedor-text-wattsap">
+            <p > Usuario: <span id="nombreUsuario"></span></p>
+            <p > Email: <span id="emailUsuario"></span></p>
+        </div>
+    </div>
+
+    <header class="header">
+        <nav class="navbar">
+            <figure class="figure">
+                <img src="insectoff.png" alt="" class="logo">
+            </figure>    
+            <button class="navbar-movil" aria-label="abrir menu"><i class="fa-solid fa-bars"></i></button>
+            <ul class="navlista">
+                <li class="navitem"><a class="navlink navlink-active" href="/admin"><i class="fa-solid fa-house"></i>Panel</a></li>
+                <li class="navitem"><a class="navlink navlink-active" href="/admin"><i class="fa-solid fa-list"></i>Reservas</a></li>
+                <li class="navitem"><a class="navlink navlink-active" href="/admin"><i class="fa fa-users" aria-hidden="true"></i>Usuarios </a></li>
+                <li class="navitem"><a class="navlink navlink-active cerrar-session" href="/"><i class="far fa-window-close"></i>Cerrar Session</a></li>
+             </ul>
+        </nav>
+    </header>
+
+    <main class="principal">  
+        <h1 class="titulo"> Usuario</h1>
+        <section class="contenedor-usuario">
+            <section class="contenedor-tabla-usuario">
+                <table class="tableUs">
+                        <thead class="theadUs">    
+                            <tr class="trUs">                                    
+                                <th class="thUs ">id</th>
+                                <th class="thUs ">Nombre</th>
+                                <th class="thUs ">Email</th>
+                                <th class="thUs">Accion</th>
+                            </tr>
+                        </thead>
+                        <tbody id ="table-data">
+                            <template class="template-usuario">
+                                <tr class="trUs">
+                                    <td class="tdUs " id="id"></td>
+                                    <td class="tdUs " id="nombre"></td>
+                                    <td class="tdUs " id="email"> </td>
+                                    <td class="tdUs"> <button class="btnactualizar"><a href="#"><i class="fa-solid fa-pen"></i></a>Editar</button>
+                                    <button class="btneliminar"><a href="#"><i class="fa-solid fa-trash"></i></a>Eliminar</button>
+                                    </td>
+                                </tr>    
+                            </template>
+                        </tbody>
+                </table>
+            </section>
+        </section>
+
+        <div class="modal-centro" id="modal-centro">
+            <button class="boton cerrar" id="cerrar-modal-centro">Cerrar</button>
+            <form action="" class="form-actualizar" method="put">
+                    <p class="titulo-actualizar"> Actualizar Datos </p>
+        
+                    <label  for="id">Id</label>
+                    <input disabled type="text" class="box-actualizar" name="id"  id="id" autocomplete="off" placeholder="Id Usuario"><br>
+        
+                    <label  for="usuario">Usuario:</label>
+                    <input type="text" minlength="3" maxlength="10" class="box-actualizar" name="usuario"  id="usuario" autocomplete="off" placeholder="Nombre de Usuario"><br>
+                    <p class="mensaje-usuario" ></p>
+                    
+                    <label  for="email">Email:</label>
+                    <input type="email" class="box-actualizar" name="email"  id="email" placeholder="Email"><br>
+                    <p class="mensaje-email" ></p>
+    
+                    <label  for="password">Password:</label>
+                    <input disabled type="password" class="box-actualizar" name="password" autocomplete="off" id="password"  placeholder="Contraseña"><br>
+                    <p class="mensaje-password" ></p>
+       
+                    <button type="submit" class="boton-actualizar">Actualizar Datos</button>
+            </form>
+        </div>
+
+        <div class="modal-eliminar" id="modal-eliminar">
+            <h2 class="titulo-modal-eliminar">¿estas seguro de eliminar el registro actual?</h2>
+            <div class="btn-contenedor">
+                <button class="boton btn-cancelar" id="cerra-modal-eliminar">cancelar</button>
+                <button class="boton btn-confirmar">confirmar</button>    
+            </div>
+        </div>            
+    </main>
+
+    <footer class="footer-panel">
+        <section>
+        </section>
+    </footer>
+
+</body>
+</html>

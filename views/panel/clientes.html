@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>listado de Reservas </title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://kit.fontawesome.com/c273467a6c.js" crossorigin="anonymous"></script>
+    <script defer src="clientes.js"></script>
+    <script defer src="cerrarSession.js"></script>
+    <script defer src="movil.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <figure class="figure">
+                <img src="carwashbrown.png" alt="" class="logo">
+            </figure>    
+            <button class="navbar-movil" aria-label="abrir menu"><i class="fa-solid fa-bars"></i></button>
+            <ul class="navlista">
+                <li class="navitem"><a class="navlink navlink-active" href="/admin"><i class="fa-solid fa-house"></i>Panel</a></li>
+                <li class="navitem"><a class="navlink navlink-active" href="/admin"><i class="fa-solid fa-list"></i>Reservas</a></li>
+                <li class="navitem"><a class="navlink navlink-active" href="/admin"><i class="fa fa-users" aria-hidden="true"></i>Usuarios </a></li>
+                <li class="navitem"><a class="navlink navlink-active cerrar-session" href="/"><i class="far fa-window-close"></i>Cerrar Session</a></li>
+             </ul>
+        </nav>
+    </header>
+
+    <main class="principal">  
+        <h1 class="titulo"> Listado de Reservas</h1>
+        <section class="contenedor-listado-servicios">
+                        <section class="contenedor-table">
+                            <table class="tableUs">
+                                <thead class="theadUs">    
+                                    <tr class="trUs">                                    
+                                        <th class="thUs">id</th>
+                                        <th class="thUs">Fecha Actual</th>
+                                        <th class="thUs">Documento</th>
+                                        <th class="thUs">Apellidos y Nombres</th>                                        
+                                        <th class="thUs">Fecha de Reserva</th>
+                                        <th class="thUs">Tipo de Vehiculo</th>
+                                        <th class="thUs">Estado</th>
+                                        <th class="thUs">Accion</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="listado-reserva">
+                                    <template>
+                                        <tr class="trUs">
+                                            <td class="tdUs" id="id-reserva"></td>
+                                            <td class="tdUs" id="fecha-hora-actual"></td>
+                                            <td class="tdUs" id="id-Datos-Personales"> 12345678</td>
+                                            <td class="tdUs" id="apellidos-nombres"> Palacios Juan</td>
+                                            <td class="tdUs" id="fecha-hora-reserva"> 20/04/2024 15:35</td>
+                                            <td class="tdUs" id="tipo-vehiculo"> Auto</td>
+                                            <td class="tdUs" id="estado-reserva"> En proceso..</td>
+                                            <td class="tdUs"> <button><a href="../../views/panel/detallereserva.html"><i class="fa-regular fa-eye"></i></a></button></td>
+                                        </tr>    
+                                    </template>
+                                </tbody>
+                            </table>
+                        </section>
+        </section>
+    </main>
+    <footer class="footer-panel">
+        <section>
+        </section>
+    </footer>
+</body>
+</html>
