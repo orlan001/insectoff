@@ -19,6 +19,7 @@ body{
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
+    padding-top: 40px;
 }
 
 .footer-iconos{
@@ -60,13 +61,14 @@ body{
     color: #643843;
 }
 
+
 .contenido-img{
     display: flex;    
     background: linear-gradient(rgba(5,7,12, 0.35), rgba(12, 12, 14, 0.8)) ,url("../img/fumilogo20.png"), center center fixed;
     background-repeat: no-repeat;
     border: unset;
     background-size: cover;
-    height: 620px;
+    height: 600px;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -104,6 +106,19 @@ body{
     border-radius: 100%;
     /*filter:drop-shadow(4px 4px 4px black);*/
 }
+
+.figure-login{
+    height: 70px;
+    width: 70px;
+}
+
+.logo-login{
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    /*filter:drop-shadow(4px 4px 4px black);*/
+}
+
 
 .navbar-movil, .cerrar {
     background-color: #cc1f32;
@@ -206,11 +221,12 @@ body{
  .contenedor-turno{
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
+    margin: 30px 30px;
     justify-content: center;
     align-items: center;
     font-size: 15px;
  }
+
 
 .titulo-tabla{
     color: #1372ee;
@@ -502,6 +518,7 @@ body{
     padding: 5px;
     margin-left: 10px;
  }
+
 .iniciar a, .registrar a{
     text-decoration: none;
     font-weight: bold;
@@ -597,9 +614,9 @@ body{
 }
 
 .mensaje-parrafo-table{
-    color: #008000;
-    font-size: 15px;
-    font-style: normal;
+    color: #104913;
+    padding: 5px 0;
+    font-size: 14px;
 }
 
 @keyframes aparece{
@@ -655,7 +672,7 @@ body{
 .titulo-turno-table{
     text-align: center;
     font-size: 18px;
-    color: blueviolet;
+    color: #643843;
     margin: 10px auto;
     border-bottom-color: aqua;
 }
@@ -867,10 +884,14 @@ html{
         gap: 8px;
         margin: 5px auto;
         justify-content: center;
+      
      }
 
+     .contenedor-contacto-etw{
+        padding-top: 0px;
+    }
     .footer{
-        height: 350px;
+        height: 300px;
      }
 
      .footer-img-cont{
@@ -892,7 +913,7 @@ html{
  
     .contenido-img{
         background-size:contain;
-        height: 280px;
+        height: 240px;
         width: 100%;
         display: flex;
         justify-content: center;
