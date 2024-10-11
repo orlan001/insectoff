@@ -14,12 +14,43 @@ body{
     padding: 5px 5px;
 }
 
+.btn-wattsap{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background-color: #0df053;
+    color: #FFFFFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index: 100px;
+}
+
+btn-wattsap:hover{
+    text-decoration: none;
+    color: #0df053;
+    background: #FFFFFF;
+}
+
 .contenedor-contacto-etw{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
     padding-top: 40px;
+}
+
+.contenedor-text-wattsap a {
+    gap: 8px;
+    border-radius: 100px;
+}
+
+.contenedor-text-wattsap i{
+    color: #643843;
 }
 
 .footer-iconos{
@@ -124,9 +155,9 @@ body{
     background-color: #cc1f32;
     color:white;
     border: none;
-    font-size: 30px;
-    padding: 0 20px;
-    line-height: 60px;
+    font-size: 40px;
+    padding: 10px 10px;
+    line-height: 20px;
     cursor: pointer;
     display: none;
 }
@@ -141,8 +172,9 @@ body{
 
 .navitem{
     margin: 0 10px;
-    line-height: 80px;
+    line-height: 40px;
     margin-top: 10px;
+    padding: 1px;
 }
 
 .navlink{
@@ -412,15 +444,16 @@ body{
     display: flex;
     justify-content:space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 5px;
     height: 120px;
+    margin-top: 1px;
  }
 
 .text-wattsap{
     display: flex;
     text-decoration: none;
     align-items: center;    
-    color: #008000;
+    color:#643843;
 }
 
 .imgwattsap{
@@ -448,19 +481,30 @@ body{
     opacity: 0.6;
  }
 
+ .form-contacto{
+    margin-bottom: 20px;
+    margin: auto;
+ }
+
+ .ubicacion{    
+    border: 1px solid rgb(243, 223, 207);
+    height: 500px;
+    border-radius: 20px;
+    margin: 20px 20px;
+ }
+
  .contenedor-mapa-contacto,
  .contenedor-form-contacto{
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 20px 20px;
+    border: 1px solid rgb(243, 223, 207);
+    padding: 20px;
+    height: 500px;
+    border-radius: 20px;
  }
-
- .form-contacto{
-    margin-bottom: 20px;
-    margin: auto;
- }
-
+ 
 .contenedor-ubicacion-contacto{
     display: flex;
     flex-direction: column;
@@ -473,7 +517,7 @@ body{
     padding: 20px;
     text-align: center;
     margin: 50px 50px;
-    border: 1px solid rgb(224, 206, 190);
+    border: 1px solid rgb(221, 186, 155);
     gap: 10px;
 }
 
@@ -482,12 +526,13 @@ body{
     text-align: center;
     justify-content: center;
     align-items: center;
-    background-color: #daf5ef;}
+
+}
 
 .mapa-contacto{
     display: block;
     width: 400px;
-    height: 200px;
+    height: 300px;
  }
 
  .img-contacto{
@@ -702,7 +747,7 @@ body{
 .footer{
     display: flex;
     flex-direction: column;
-    background-color:#EFF6E0;
+    background-color:#cee2f3;
     text-align: center;
     color: #643843;
     height: 200px;
@@ -720,6 +765,7 @@ body{
     width: 100%;
     gap: 30px;    
     padding: 10px 0;
+    margin-top: 20px;
  }
  
  .footer-ubicacion{
@@ -873,23 +919,19 @@ html{
     .contenedor-contacto-etw{
         flex-direction: column;
         gap: 5px;
-        font-size:12px ;
+        font-size:14px ;
         margin-top: 1px;
     }
 
     .contenedor-wattsap {
-        display: flex;
-        flex-wrap:wrap;
-        height: 150px;
         gap: 8px;
-        margin: 5px auto;
-        justify-content: center;
-      
+        margin: 1px auto;
      }
 
      .contenedor-contacto-etw{
         padding-top: 0px;
     }
+    
     .footer{
         height: 300px;
      }
@@ -919,16 +961,19 @@ html{
         justify-content: center;
     }
 
-    .logo{
-        width: 70px;
-        height: 70px;
-    }
-
-
-    .navbar-movil, .cerrar{
+    .navbar-movil{
         display: block;
+        width: 100%;
+        height: 60px;
     }
     
+    .cerrar{
+        display: block;
+        font-size: 20px;
+        width: 50%;
+        height: 60px;
+    }
+
     .navbar-movil, cerrar:focus:not(:focus-visible){
         outline: none;
     }
@@ -941,23 +986,23 @@ html{
         flex-direction: column;
         align-items: start;
         position: fixed;
-        margin: 0px 0px; 
+        margin: 1px 1px; 
         background-color:#FFFDD7;
         z-index: 1;
         top: 0px;
-        padding: 5px 0;
+        padding: 2px 0;
         width: 100%;
         height: calc(100%);
         left: 100%;
         transition: left 0.3s;
         font-size: 16px;
         align-items: center;
+        
     }
     
 
     .navitem{
         display: flex;
-        line-height: 40px;
         border-bottom: 1px solid rgb(224, 206, 190);
         width: 50%;
     }
@@ -979,9 +1024,14 @@ html{
         left: 0;
     }
 
+    .logo{
+        width: 80px;
+        height: 80px;
+    }
+
     .figure{
-        height: 70px;
-        width: 70px;
+        height: 80px;
+        width: 80px;
         padding: auto;
     }    
     
@@ -1027,7 +1077,7 @@ html{
 @media ((min-width:768px) and (max-width:998px)){ 
 
     .contenedor-wattsap {
-        font-size: 12px;
+        font-size: 13px;
      }
     
     .navbar{
